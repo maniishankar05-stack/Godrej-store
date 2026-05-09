@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Profile.module.css";
 import { useAuth } from "../Contexts/authContext";
 const Profile = () => {
-  const [auth, setAuth] = useAuth();
+  const [auth] = useAuth();
   const { name, email, phone, address } = auth.user;
 
   return (
